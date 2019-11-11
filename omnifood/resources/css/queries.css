@@ -93,4 +93,14 @@
     .btn-app img { height: 35px; } 
     h1 { font-size: 150%; }
     h2 { font-size: 120%; }
+
+    .meal-photo img:hover {
+        -webkit-transform: scale(1.14);
+                transform: scale(1.14);
+    }
+
+    .meal-photo img {
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25);
+    }
 }
