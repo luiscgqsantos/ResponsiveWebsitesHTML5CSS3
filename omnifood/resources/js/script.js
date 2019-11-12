@@ -66,7 +66,7 @@ $(document).ready(function () {
         offset: "50%"
     });
 
-    /* Mobile navigation */
+    //Mobile navigation
     $('.js--nav-icon').click(function () {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
@@ -82,4 +82,20 @@ $(document).ready(function () {
         }
     });
 
+    //Maps
+    var map = new GMaps({
+        div: '.map',
+        lat: 41.1531913,
+        lng: -8.55555,
+        zoom: 13
+    });
+
+    map.addMarker({
+        lat: 41.153361,
+        lng: -8.6135287,
+        title: 'Mindera',
+        infoWindow: {
+            content: '<p>Our HQ!</p>'
+        }
+    });
 });
